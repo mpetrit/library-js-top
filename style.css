@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 25px; 
+    margin: 5px;  
+    border-radius:25px ;
+    min-height: 100vh;
+    border: 1px solid;
+
+}
+.book-container{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(250px,30%));
+    gap: 15px;
+    border-radius:25px ;
+    border: 1px solid;
+    padding: 35px;
+    background-color: rgb(241, 241, 241);
+}
+.book-card{
+    width: minmax(250px,30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    border-radius:25px ;
+    border: 1px solid;
+}
+#new-book-btn{
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+}
+dialog:open{
+    
+    width: 1000px;
+    height: 500px;
+    position: fixed;
+    top: 21%;
+    left: 21%;
+}
+dialog:open>form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+dialog:open>input{
+    width: 30%;
+}
